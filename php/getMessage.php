@@ -13,6 +13,5 @@ $output = $result->fetch_all(MYSQLI_ASSOC);
 
 $sql->close();
 $co->close();
-
 echo json_encode($output);
 ?>

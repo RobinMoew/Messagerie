@@ -47,6 +47,16 @@ ion-icon {
   height: 50vh;
   margin-bottom: 2rem;
   overflow: auto;
+  background: #f5f5f5;
+}
+
+.message_container {
+  padding: 5px;
+}
+
+.message_container:nth-child(even) {
+  background: rgb(43, 13, 78);
+  color: #f5f5f5;
 }
 
 .pseudo {

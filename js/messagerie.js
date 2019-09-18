@@ -10,8 +10,10 @@ $('#send').click(() => {
     alert("C'est un chat, c'est fait pour discuter. Tu vas pas dans un bar pour boire de l'eau !");
   } else {
     display_message.append(`
-      <div class='pseudo'>${pseudo}:</div>
-      <div class='message'>${message}</div>
+      <div class='message_container'>
+        <div class='pseudo'>${pseudo}:</div>
+        <div class='message'>${message}</div>
+      </div>
     `);
     display_message.animate(
       {
@@ -45,8 +47,10 @@ $('#reset').click(() => {
 
       for (let i = 0; i < json.length; i++) {
         display_message.append(`
-          <div class='pseudo'>${json[i].pseudo}:</div>
-          <div class='message'>${json[i].message}</div>
+          <div class='message_container'>
+            <div class='pseudo'>${json[i].pseudo}:</div>
+            <div class='message'>${json[i].message}</div>
+          </div>
         `);
       }
     }

@@ -39,12 +39,17 @@ $('#reset').click(() => {
   input.val('');
 
   $.ajax({
-    url: 'php/getMessage.php',
+    url: '../php/getMessage.php',
     type: 'GET',
     success: (result) => {
-      let json = JSON.parse(result);
-      console.log(json);
+      let json = null;
+      try{
+        json = JSON.parse(result);
+      }catch(e){
 
+        json = result;
+        console.log(json);
+      }
       for (let i = 0; i < json.length; i++) {
         display_message.append(`
           <div class='message_container'>
@@ -52,6 +57,7 @@ $('#reset').click(() => {
             <div class='message'>${json[i].message}</div>
           </div>
         `);
+      
       }
     }
   });

@@ -21,6 +21,15 @@ ion-icon {
 
 #title {
   margin-bottom: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #521d1d;
+  color:white;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  
 }
 
 #container {

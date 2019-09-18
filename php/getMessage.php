@@ -1,5 +1,5 @@
 <?php
-include_once('co.php');
+include_once('connexion.php');
 
 $sql = $co->prepare('SELECT pseudo, message FROM Message');
 $sql->execute();

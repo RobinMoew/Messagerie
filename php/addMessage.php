@@ -1,5 +1,5 @@
 <?php
-include_once('co.php');
+include_once('connexion.php');
 
 $pseudo = $_POST['pseudo'];
 $message = $_POST['message'];

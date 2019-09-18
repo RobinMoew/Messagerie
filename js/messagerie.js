@@ -2,6 +2,7 @@ let pseudos = ['Momo', 'Robin', 'Jesus', 'Ricardo'];
 let display_message = $('#messages');
 let input = $('#message');
 
+
 $('#send').click(() => {
   let pseudo = pseudos[Math.floor(Math.random() * pseudos.length)];
   let message = $('#message').val();
@@ -11,7 +12,7 @@ $('#send').click(() => {
   } else {
     display_message.append(`
       <div class='message_container'>
-        <div class='pseudo'>${pseudo}:</div>
+        <div class='pseudo'><img class="imagePseudo" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/User_Avatar_2.png">${pseudo}:</div>
         <div class='message'>${message}</div>
       </div>
     `);

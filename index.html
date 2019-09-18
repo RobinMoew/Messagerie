@@ -4,16 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
     <title>Messagerie</title>
   </head>
   <body>
-    
     <div id="main">
-        <h1 id="title">Tchat M'R</h1>
-      <div id="messages"></div>
-      <div id="container">
-        <input type="text" name="message" id="message" />
-        <button id="send" value="">OK</button>
+      <h1 id="title">Tchat M'R</h1>
+      <div id="content">
+        <div id="messages"></div>
+        <div id="container">
+          <div>
+            <input id="message" />
+            <ion-icon size="large" name="send" id="send"></ion-icon>
+          </div>
+          <ion-icon size="large" name="refresh" id="reset"></ion-icon>
+        </div>
       </div>
     </div>
     <script src="js/messagerie.js"></script>

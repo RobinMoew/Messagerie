@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+ion-icon {
+  cursor: pointer;
+}
+
 #main {
   min-height: 100vh;
   display: flex;
@@ -15,9 +19,26 @@
   min-width: 30vw;
 }
 
+#title {
+  margin-bottom: 2rem;
+}
+
 #container {
   display: flex;
   justify-content: center;
+}
+
+#container div {
+  margin-right: 2rem;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+#container div > input {
+  height: 100%;
+  border: none;
+  border-right: 1px solid #ddd;
 }
 
 #messages {
@@ -25,15 +46,15 @@
   width: 100%;
   height: 50vh;
   margin-bottom: 2rem;
+  overflow: auto;
 }
 
-#container input {
-  margin-right: 2rem;
+.pseudo {
+  text-decoration: underline;
+  margin: 5px;
 }
 
-#container button {
-  border: none;
-  background: ;
+.message {
   padding: 5px;
-  cursor: pointer;
+  margin-left: 10px;
 }
